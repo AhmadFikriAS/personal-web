@@ -13,7 +13,7 @@ class Footer extends StatelessWidget {
           children: [
             Padding(
               padding: EdgeInsets.only(bottom: 10),
-              child: Text('© 2025 AcxDev'),
+              child: Text('© 2025 ahmadfikrias'),
             ),
           ],
         ),
