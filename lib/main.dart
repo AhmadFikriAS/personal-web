@@ -15,15 +15,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       builder: (context, child) =>
           ResponsiveBreakpoints.builder(child: child!, breakpoints: [
-        Breakpoint(start: 0, end: 360, name: 'SMALL MOBILE'),
-        Breakpoint(start: 361, end: 450, name: 'MOBILE'),
-        Breakpoint(start: 451, end: 800, name: 'TABLET'),
-        Breakpoint(start: 801, end: 1920, name: 'DESKTOP'),
+        Breakpoint(start: 0, end: 450, name: MOBILE),
+        Breakpoint(start: 451, end: 800, name: TABLET),
+        Breakpoint(start: 801, end: 1920, name: DESKTOP),
         Breakpoint(start: 1921, end: double.infinity, name: '4K'),
       ], breakpointsLandscape: [
-        Breakpoint(start: 0, end: 1023, name: 'MOBILE'),
-        Breakpoint(start: 1024, end: 1599, name: 'TABLET'),
-        Breakpoint(start: 1600, end: double.infinity, name: 'DESKTOP'),
+        Breakpoint(start: 0, end: 1023, name: MOBILE),
+        Breakpoint(start: 1024, end: 1599, name: TABLET),
+        Breakpoint(start: 1600, end: double.infinity, name: DESKTOP),
       ]),
       initialRoute: '/',
       debugShowCheckedModeBanner: false,

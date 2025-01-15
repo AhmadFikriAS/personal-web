@@ -14,26 +14,30 @@ class Header extends StatelessWidget {
         layout: ResponsiveRowColumnType.ROW,
         children: [
           ResponsiveRowColumnItem(
-            rowFlex: 2,
+            rowFlex: 3,
             child: Padding(
               padding: EdgeInsets.only(
                 left: ResponsiveBreakpoints.of(context).largerThan(TABLET)
-                    ? 100
+                    ? 200
                     : 30,
                 top: 20,
               ),
-              child: Image.asset(
-                'assets/icons/logos.png',
-                scale: 4,
-              ),
+              child: Text('< / FikDev >',
+                  style: TextStyle(
+                    fontSize:
+                        ResponsiveBreakpoints.of(context).largerThan(TABLET)
+                            ? 16
+                            : 15,
+                    fontWeight: FontWeight.bold,
+                  )),
             ),
           ),
           ResponsiveRowColumnItem(
-            rowFlex: 4,
+            rowFlex: 5,
             child: Padding(
               padding: EdgeInsets.only(
                 right: ResponsiveBreakpoints.of(context).largerThan(TABLET)
-                    ? 100
+                    ? 200
                     : 30,
                 top: 20,
               ),
@@ -49,23 +53,41 @@ class Header extends StatelessWidget {
                       children: [
                         TextButton(
                           onPressed: () {},
-                          child: const Text(
+                          child: Text(
                             'Home',
-                            style: TextStyle(color: Colors.black),
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: ResponsiveBreakpoints.of(context)
+                                      .largerThan(TABLET)
+                                  ? 16
+                                  : 15,
+                            ),
                           ),
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: const Text(
+                          child: Text(
                             'About',
-                            style: TextStyle(color: Colors.black),
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: ResponsiveBreakpoints.of(context)
+                                      .largerThan(TABLET)
+                                  ? 16
+                                  : 15,
+                            ),
                           ),
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: const Text(
+                          child: Text(
                             'Contact',
-                            style: TextStyle(color: Colors.black),
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: ResponsiveBreakpoints.of(context)
+                                      .largerThan(TABLET)
+                                  ? 16
+                                  : 15,
+                            ),
                           ),
                         ),
                       ],
